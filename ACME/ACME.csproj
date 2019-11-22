@@ -129,12 +129,21 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PeopleController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201911210911473_Acme-v1.cs" />
     <Compile Include="Migrations\201911210911473_Acme-v1.designer.cs">
       <DependentUpon>201911210911473_Acme-v1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911220813230_DBGENERATEid.cs" />
+    <Compile Include="Migrations\201911220813230_DBGENERATEid.designer.cs">
+      <DependentUpon>201911220813230_DBGENERATEid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911220825015_DBGENERATEid1.cs" />
+    <Compile Include="Migrations\201911220825015_DBGENERATEid1.designer.cs">
+      <DependentUpon>201911220825015_DBGENERATEid1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ACMEDBContext.cs" />
@@ -181,6 +190,14 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Employee\Index.cshtml" />
+    <Content Include="Views\Employee\Create.cshtml" />
+    <Content Include="Views\Employee\Edit.cshtml" />
+    <Content Include="Views\Employee\Delete.cshtml" />
+    <Content Include="Views\People\Create.cshtml" />
+    <Content Include="Views\People\Delete.cshtml" />
+    <Content Include="Views\People\Details.cshtml" />
+    <Content Include="Views\People\Edit.cshtml" />
+    <Content Include="Views\People\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -201,6 +218,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201911210911473_Acme-v1.resx">
       <DependentUpon>201911210911473_Acme-v1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911220813230_DBGENERATEid.resx">
+      <DependentUpon>201911220813230_DBGENERATEid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911220825015_DBGENERATEid1.resx">
+      <DependentUpon>201911220825015_DBGENERATEid1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

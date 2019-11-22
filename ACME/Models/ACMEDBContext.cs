@@ -14,6 +14,12 @@ namespace ACME.Models
         }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Person> People { get; set; }
-        
+
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            Database.SetInitializer<ACMEDBContext>(null);
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
